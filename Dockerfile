@@ -31,7 +31,6 @@ RUN apt-get update && \
       cd /usr/local/share/lhapdf-5.9.1 && \
       ./configure && \
       make && make install && \
-    rm -r /usr/local/share/lhapdf-5.9.1 && \
       rm -r /usr/local/share/log4cpp && \
       rm /usr/local/share/*.tar.gz && \
     apt-get autoremove -y && apt-get clean -y
